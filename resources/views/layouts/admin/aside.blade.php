@@ -24,8 +24,14 @@
                     <a href="page-products-list.html">Product List</a>
                     <a href="page-products-grid.html">Product grid</a>
                     <a href="page-products-grid-2.html">Product grid 2</a>
-                    <a href="page-categories.html">Categories</a>
+                    <a href="{{route('categories.index')}}">All Categories</a>
+                    <a href="{{route('categories.create')}}">New Category</a>
+
+                    <a href="{{route('subcategory.index')}}">All Sub-categories</a>
+                    <a href="{{route('subcategory.create')}}">New Sub-category</a>
+
                     <a href="{{route('brands.index')}}">All Brands</a>
+                    <a href="{{route('brands.create')}}">All Brands</a>
                 </div>
             </li>
             <li class="menu-item has-submenu">

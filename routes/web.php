@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Vendor\VendorAdminController;
 use Illuminate\Support\Facades\Route;
@@ -67,6 +69,8 @@ Route::get('dashboard/login', [UserController::class, 'login'])->name('user.logi
 //Route Brand controller
 Route::middleware(['auth', 'role:admin'])->group(function(){
     Route::resource('products/brands', BrandController::class);
+    Route::resource('products/categories', CategoryController::class);
+    Route::resource('products/subcategory',  SubCategoryController::class);
 });
 
 require __DIR__.'/auth.php';
