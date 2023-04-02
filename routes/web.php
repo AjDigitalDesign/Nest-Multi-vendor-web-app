@@ -70,7 +70,7 @@ Route::get('dashboard/login', [UserController::class, 'login'])->name('user.logi
 Route::middleware(['auth', 'role:admin'])->group(function(){
     Route::resource('products/brands', BrandController::class);
     Route::resource('products/categories', CategoryController::class);
-    Route::resource('products/subcategory',  SubCategoryController::class);
+    Route::resource('products/subcategories', SubCategoryController::class);
 });
 
 require __DIR__.'/auth.php';

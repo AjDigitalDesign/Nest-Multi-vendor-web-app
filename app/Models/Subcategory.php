@@ -8,16 +8,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-class SubCategory extends Model
+class Subcategory extends Model
 {
     use HasSlug;
     use HasFactory;
 
-    protected $guarded = [];
-
-    /**
-     * Get the options for generating the slug.
-     */
     public function getSlugOptions() : SlugOptions
     {
         return SlugOptions::create()

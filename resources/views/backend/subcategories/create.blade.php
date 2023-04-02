@@ -14,7 +14,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="offset-md-2 col-md-8 offset-md-2">
-                        <form method="POST" action="{{route('subcategory.store')}}">
+                        <form method="POST" action="{{route('subcategories.store')}}">
                             @csrf
                             <div class="mb-4">
                                 <label for="name" class="form-label">Name</label>
@@ -47,7 +47,7 @@
                                     {{old('description')}}</textarea>
                             </div>
                             <div class="d-grid">
-                                <button class="btn btn-primary">Create category</button>
+                                <button class="btn btn-primary">Create sub-category</button>
                             </div>
                         </form>
                     </div>

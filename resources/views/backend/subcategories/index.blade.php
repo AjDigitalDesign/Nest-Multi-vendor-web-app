@@ -26,20 +26,20 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($sub_categories as $sub_category)
+                                @foreach($subcategories as $subcategory)
                                     <tr>
                                         <td>4</td>
-                                        <td><b>{{$sub_category->category->name}}</b></td>
-                                        <td>{{$sub_category->name}}</td>
-                                        <td>/{{$sub_category->slug}}</td>
+                                        <td><b>{{$subcategory->category->name}}</b></td>
+                                        <td>{{$subcategory->name}}</td>
+                                        <td>/{{$subcategory->slug}}</td>
                                         <td class="text-end">
                                             <div class="dropdown">
                                                 <a href="#" data-bs-toggle="dropdown" class="btn btn-light rounded btn-sm font-sm"> <i class="material-icons md-more_horiz"></i> </a>
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">View detail</a>
-                                                    <a class="dropdown-item" href="{{route('subcategory.edit', $sub_category)
+                                                    <a class="dropdown-item" href="{{route('subcategories.edit', $subcategory)
                                                     }}">Edit</a>
-                                                    <form method="POST" action="{{route('categories.destroy', $sub_category)}}">
+                                                    <form method="POST" action="{{route('subcategories.destroy', $subcategory)}}">
                                                         @csrf
                                                         @method('DELETE')
                                                         <input name="_method" type="hidden" value="DELETE">

@@ -26,10 +26,8 @@
                     <a href="page-products-grid-2.html">Product grid 2</a>
                     <a href="{{route('categories.index')}}">All Categories</a>
                     <a href="{{route('categories.create')}}">New Category</a>
-
-                    <a href="{{route('subcategory.index')}}">All Sub-categories</a>
-                    <a href="{{route('subcategory.create')}}">New Sub-category</a>
-
+                    <a href="{{route('subcategories.index')}}">All SubCategories</a>
+                    <a href="{{route('subcategories.create')}}">New SubCategory</a>
                     <a href="{{route('brands.index')}}">All Brands</a>
                     <a href="{{route('brands.create')}}">All Brands</a>
                 </div>

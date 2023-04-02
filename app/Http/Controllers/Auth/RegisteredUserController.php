@@ -48,9 +48,6 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-
-
-
         $profile = new Profile();
         if($request->hasFile('profile_image')){
             $requested_file = $request->file('profile_image');
